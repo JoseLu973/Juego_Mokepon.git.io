@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background-image: url(	https://www.codewithrandom.com/wp-content/uploads/2022/10/CSS-Waves-768x362.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;   
+    font-family: 'Creepster', cursive;
+    background-color:#A0D8B3 ;
+}
+
+#seleccionar-mascota{
+   display: flex;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.titulo {
+  color: rgb(10, 10, 10);
+  width: 288px;
+  height: 61px;
+  font-size: 78px;
+  text-shadow:
+  0 0 5px rgba(0,178,255,1),
+  0 0 10px rgba(0,178,255,1),
+  0 0 20px rgba(0,178,255,1),
+  0 0 40px rgba(38,104,127,1),
+  0 0 80px rgba(38,104,127,1),
+  0 0 90px rgba(38,104,127,1),
+  0 0 100px rgba(38,104,127,1),
+  0 0 140px rgba(38,104,127,1),
+  0 0 180px rgba(38,104,127,1);
+}
+
+.subtitulo {
+    color: #3344ff;
+    font-family: Showcard Gothic;
+    font-size: 35px;
+    text-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 80px rgba(38,104,127,1),
+    0 0 90px rgba(38,104,127,1),
+    0 0 100px rgba(38,104,127,1),
+    0 0 140px rgba(38,104,127,1),
+    0 0 180px rgba(38,104,127,1);
+    
+}
+
+.tarjetas, .tarjetas-ataques {
+  display:flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+   width: 243px;
+   height: 162px;
+   background: #1B9C85;
+   padding: 10px;
+   box-sizing: border-box;
+   border-radius: 33px;
+   border: 4px solid blue ; 
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+   width: 130px;
+   height: 130px;
+}
+
+#boton-mascota {
+   width: 234px;
+   height: 57px;
+   background: rgb(90, 153, 252);
+   padding: 2px;
+   margin-top: 30px ;
+   border-radius: 30px;
+   border: 4px solid rgb(104, 104, 243);
+   font-size: 27px;
+   font-family:'Showcard Gothic';
+}
+
+ input {
+    display: none;
+ }
+
+ input:checked + label {
+  background-color:#F6BA6F;
+ } 
+
+ #seleccionar-ataque {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .boton-de-ataque {
+   background-color: #3344ff;
+   padding: 10px;
+   box-sizing: border-box;
+   border-radius: 33px;
+   border-color: transparent;
+   width: 100px;
+   color:rgb(4, 4, 67);
+   font-family:'Cooper Black';
+   font-size: 15px;
+   display: flex;
+ }
+  
+ #mensajes {
+  width: 237px;
+  background: aquamarine;
+  padding: 3px;
+  border-radius: 20px;
+  border: 1px solid #0E8388;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 22px;
+ }
+
+ #resultado {
+  font-size: 19px;
+ }
+
+ #boton-reiniciar {
+   border: none;
+   background: #6DA9E4;
+   border-radius: 10px;
+   border: 1px solid #2F58CD;
+   height: 30px;
+   font-family:'Cooper Black';
+ }
+
+ .ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color:black;
+ }
+
+#vidas-jugador, #vidas-enemigo {
+	color: #d43321;
+	font-size: 32;
+  margin-bottom: 0;
+}
+
+#jugador, #enemigo {
+	color: #D8934F;
+	font-size: 1.2rem;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: #FFDD83;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid #C27664;
+}
+
+@media (max-width: 360px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+
